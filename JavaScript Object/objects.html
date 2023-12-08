@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Objects</title>
-    </head>
-    <body>
-        <script>
-            const products = {
-                name: 'socks',
-                price: 1090
-            };
-            
-            console.log(typeof products);
 
-            console.log(products);
-            console.log(products.name);
-            console.log(products.price);
+<head>
+    <title>Objects</title>
+</head>
 
-            products.name = 'cotton socks';
+<body>
+    <script>
+        /*
+        const products = {
+            name: 'socks',
+            price: 1090
+        };
+        
+        console.log(typeof products);
 
-            console.log(products.name);
+        console.log(products);
+        console.log(products.name);
+        console.log(products.price);
 
-            products.newProperty = true;
-            console.log(products.newProperty);
-            console.log(products);
+        products.name = 'cotton socks';
 
-            delete products.newProperty;
-            console.log(products);
-            
-        </script>
-    </body>
+        console.log(products.name);
+
+        products.newProperty = true;
+        console.log(products.newProperty);
+        console.log(products);
+
+        delete products.newProperty;
+        console.log(products);
+        */
+
+        const products2 = {
+            name: 'shirt',
+            ['delivery-time']: '1 day',
+            rating: {
+                stars: 4.5,
+                count: 87
+            },
+            fun: function function1() {
+                console.log('Function inside object');
+            } 
+        };
+
+        console.log(products2);
+        console.log(products2['name']);
+        console.log(products2['delivery-time']);
+        console.log(products2['delivery-day']);
+
+        console.log(products2.rating.stars);
+        
+        console.log(products2.fun);
+        products2.fun();
+
+    </script>
+</body>
+
 </html>
