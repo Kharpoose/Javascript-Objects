@@ -40,7 +40,7 @@
             },
             fun: function function1() {
                 console.log('Function inside object');
-            } 
+            }
         };
 
         console.log(products2);
@@ -49,9 +49,15 @@
         console.log(products2['delivery-day']);
 
         console.log(products2.rating.stars);
-        
+
         console.log(products2.fun);
         products2.fun();
+
+        console.log(JSON.stringify(products2));
+
+        const jsonString = JSON.stringify(products2);
+        console.log(JSON.parse(jsonString));
+
 
     </script>
 </body>
